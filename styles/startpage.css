@@ -1,0 +1,147 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+.login-container h2 {
+    color: #000;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* H1 */
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px; /* 145.455% */
+    letter-spacing: 0.5px;
+}
+
+.login-container h3{
+    color: #9FA5C0;
+    text-align: center;
+    font-feature-settings: 'clig' off, 'liga' off;
+    /* P2 */
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 25px; /* 166.667% */
+    letter-spacing: 0.5px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 32px;
+    border: 1px solid #ddd;
+    margin-top: 5px;
+}
+
+.login-button {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: darkorange;
+}
+
+.forgot-password{
+    text-align: right;
+    margin-bottom: 50px;
+    color: black;
+
+}
+
+.forgot-password a {
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.register-button {
+    width: 100%;
+    margin: 0;
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button:hover {
+    background-color: darkorange;
+}
+
+
+.bottom-text {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.bottom-text a {
+    text-decoration: none;
+    color: orange;
+    cursor: pointer;
+}
+
+#checklist p {
+    margin: 10px;
+    padding: 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+#checklist label {
+    display: block;
+    margin: 5px 0;
+}
+
+/* Style the radio button to look like a regular bullet point */
+#checklist input[type="radio"] {
+    border: 4px solid #000;
+    vertical-align: middle;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+/* Style the checked state */
+#checklist input[type="radio"]:checked:before {
+    content: '';
+    position: absolute;
+    background: #000;
+    border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        width: 80%;
+    }
+}

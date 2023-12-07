@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../../styles/startpage.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>Welcome back!</h2>
+    <h3>Add your info to login</h3>
+    <div>
+        <form id="registerForm">
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <input type="text" id="name" class="form-control" placeholder="Name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <input type="text" id="surname" class="form-control" placeholder="Surname" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <input type="password" id="password" class="form-control" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-with-icon">
+                    <input type="text" id="gender" class="form-control" placeholder="Gender" required>
+                </div>
+            </div>
+            <div id="checklist">
+                <p>I will:</p>
+                <label><input type="radio" name="option" value="Hitchhike"> Hitchhike</label>
+                <label><input type="radio" name="option" value="Drive"> Drive</label>
+                <label><input type="radio" name="option" value="Both"> Both</label>
+            </div>
+            <button type="submit" class="register-button" onclick="location.href='../groups.html'">Register</button>
+            <div class="bottom-text">
+                <p>Do you have an account? <a href="login.html">Login</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

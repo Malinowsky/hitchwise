@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.main-content {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.groups {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.group-card {
+    flex: 0 1 calc(50% - 20px);
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.group-image {
+    background-color: #ffd700;
+    height: 150px;
+}
+
+.group-info {
+    padding: 20px;
+}
+
+.navbar {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item .icon {
+
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item .label {
+    font-size: 12px;
+    color: #777;
+}
+
+.nav-item.active .label {
+    color: #FFA500;
+}
+.nav-item:hover .label {
+    color: #FFA500;
+}
+
+.nav-item.active:after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    height: 3px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        align-items: center;
+    }
+    .group-card {
+        flex: 0 1 100%;
+    }
+}

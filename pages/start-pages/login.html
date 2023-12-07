@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../../styles/startpage.css">
+</head>
+<body>
+<div class="login-container">
+    <h2>Welcome back!</h2>
+    <h3>Add your info to login</h3>
+    <div>
+        <form id="loginForm">
+            <div class="form-group">
+                <div class="input-with-icon">
+                <input type="email" id="email" class="form-control" placeholder="Email" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="input-with-icon">
+                <input type="password" id="password" class="form-control" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="forgot-password">
+                    <a href="#">Forgot your password?</a>
+            </div>
+            <button type="submit" class="login-button" onclick="location.href='../groups.html';">Login</button>
+            <div class="bottom-text">
+                <p>Don't have an account? <a href="register.html">Register</a></p>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
