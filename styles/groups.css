@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f7f7;
+    background-color: white;
     margin: 0;
     padding: 0;
     display: flex;
@@ -12,10 +12,8 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    background-color: white;
     padding: 20px;
     border-radius: 32px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 800px;
     max-height: 100vh;
@@ -24,7 +22,6 @@ body {
 
 .header {
     text-align: center;
-    padding: 20px;
     background-color: #fff;
 }
 
@@ -46,16 +43,16 @@ body {
 
 .group-card {
     flex: 0 1 calc(50% - 20px);
-    background-color: #fff;
+    background-color: #FDEE92;
     border-radius: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 20px;
     overflow: hidden;
+    width: 180px;
 }
 
 .group-image {
-    background-color: #ffd700;
-    height: 150px;
+    width: 150px;
 }
 
 .group-info {
@@ -116,4 +113,9 @@ body {
     .group-card {
         flex: 0 1 100%;
     }
+}
+
+a {
+    text-decoration: none;
+    color: black;
 }
