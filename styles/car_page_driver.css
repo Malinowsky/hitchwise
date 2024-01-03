@@ -1,0 +1,316 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px;
+    border-radius: 32px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 800px;
+    max-height: 100vh;
+    overflow: auto;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+}
+
+.button-container {
+    display: flex;
+    gap: 10px; /* Space between buttons */
+    margin-top: 10px; /* Space between the header and the buttons */
+}
+
+.filter-button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.filter-button.active {
+    background-color: darkorange;
+}
+
+.filter-button.active {
+    background-color: orange;
+    color: white;
+}
+
+.filter-button:not(.active) {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    accent-color: orange; /* Adjust the color to match your design */
+}
+/*LOCATION*/
+.stops-container {
+    margin: 20px 0;
+}
+
+.stop-item {
+    background-color: #f7f7f7;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 10px; /* Add space between items */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: adds a subtle shadow */
+}
+
+.stop-icon {
+    color: orange; /* Adjust the color to match your design */
+    margin-right: 10px;
+}
+
+/* Add the Google Material Icons font */
+.material-icons {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    line-height: 1;
+    text-transform: none;
+    letter-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    direction: ltr;
+
+    /* Support for all WebKit browsers. */
+    -webkit-font-smoothing: antialiased;
+    /* Support for Safari and Chrome. */
+    text-rendering: optimizeLegibility;
+
+    /* Support for Firefox. */
+    -moz-osx-font-smoothing: grayscale;
+
+    /* Support for IE. */
+    font-feature-settings: 'liga';
+}
+
+/*ACTION BUTTONS*/
+
+.actions-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.action-button {
+    padding: 10px;
+    border: none;
+    border-radius: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%; /* Ensure full width */
+}
+
+.action-button.edit {
+    background-color: orange; /* Or any color you prefer */
+    color: white;
+}
+
+.action-button.cancel {
+    background-color: red; /* Or any color you prefer */
+    color: white;
+}
+
+.action-button.notify {
+    background-color: orange; /* Or any color you prefer */
+    color: white;
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* POPUP */
+.popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 400px;
+    line-height: 1.6;
+    hyphens: auto;
+}
+
+.popup textarea {
+    width: 100%;
+    height: 100px; /* Adjust height as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    border: 1px solid #ccc; /* Light grey border */
+    resize: none; /* Disables resizing of the textarea */
+}
+
+.message-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.popup-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.popup-button.cancel {
+    color: white;
+    background-color: grey;
+}
+
+@media (max-width: 768px) {
+    .popup {
+        width: 90%; /* Allow the popup to be wider on small screens */
+        padding: 15px;
+    }
+    .message-box p {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
+}
+
+/* Popup request */
+.request-popup {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 300px; /* Adjust as necessary */
+    text-align: center;
+}
+
+.request-popup p {
+    margin-bottom: 10px;
+}
+
+/* Popup Buttons */
+.request-popup-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.request-popup-button {
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.request-popup-button.yes {
+    background-color: orange;
+    color: white;
+}
+
+.request-popup-button.no {
+    background-color: orange;
+    color: white;
+    opacity: 0.7; /* Distinguish the 'No' button with less opacity */
+}
+
+/*NAVBAR*/
+
+.navbar {
+    margin-top: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+.nav-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.nav-item .icon {
+
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.nav-item .label {
+    font-size: 12px;
+    color: #777;
+}
+
+.nav-item.active .label {
+    color: #FFA500;
+}
+.nav-item:hover .label {
+    color: #FFA500;
+}
+
+.nav-item.active:after {
+    content: '';
+    display: block;
+    margin-top: 5px;
+    height: 3px;
+    width: 100%;
+    background-color: #007bff;
+}
+
+
+@media (max-width: 768px) {
+    .main-content {
+        align-items: center;
+    }
+    .group-card {
+        flex: 0 1 100%;
+    }
+}
+
+
+
+

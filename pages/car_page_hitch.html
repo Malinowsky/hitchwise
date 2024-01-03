@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="../styles/car_page_hitch.css">
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h2>Lady Gaga’s Car</h2>
+        <p>Going to: Home</p>
+    </header>
+    <div class="stop-container">
+        <p>From: ISPGaya (Gaia)</p>
+        <p> To: Polo Universitário (Porto)</p>
+        <p>2 spots left</p>
+        <p>Leaving at: 12:30h of 05/12/2023</p>
+        <p>Meeting point: ISPGaya level 2, in front of the bathrooms</p>
+    </div>
+    <button class="filter-button active">I'm interested</button>
+    <div class="stop-container">
+        <p>I need to stop in:</p>
+        <div class="stop-point">
+            <span class="material-icons">place</span>
+            <p>GaiaShopping</p>
+        </div>
+        <div class="checkbox-container">
+            <input type="checkbox" id="driver-decision">
+            <label for="driver-decision">I understand the driver decides where they will stop after filling the spots and I can adapt to that</label>
+        </div>
+    </div>
+    <button class="filter-button active" id="requestSpotutton">Request spot</button>
+
+    <div id="popupOverlay" class="popup-overlay" style="display:none;">
+        <div class="popup">
+            <p>You have received a message from the driver <strong>Lady Gaga</strong></p>
+            <div class="message-box">
+                <p>Message here</p>
+            </div>
+            <button id="okButton" class="popup-button">Ok</button>
+            <button id="contactDriverButton" class="popup-button contact-driver">Contact driver</button>
+        </div>
+    </div>
+
+    <div id="contactDriverPopup" class="popup-overlay" style="display:none;">
+        <div class="popup">
+            <p>Driver's Phone Number</p>
+            <div class="phone-number-box">
+                <p>+1234567890</p> <!-- Replace with the actual number -->
+            </div>
+            <button id="closeContactPopup" class="popup-button">Close</button>
+        </div>
+    </div>
+
+
+    <nav class="navbar">
+        <a href="#" class="nav-item active">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">👥</span>
+            <span class="label">Groups</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">👤</span>
+            <span class="label">Profile</span>
+        </a>
+    </nav>
+</div>
+<script src="../js/car_page_hitch.js"></script>
+</body>
+</html>

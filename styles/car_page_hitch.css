@@ -5,7 +5,6 @@ body {
     padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 100vh;
 }
 
@@ -27,25 +26,6 @@ body {
     padding: 20px;
     background-color: #fff;
 }
-.search-container {
-    padding: 10px;
-}
-
-.search-container input[type="search"] {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-    border-radius: 20px;
-    border: none;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-}
-
-.filter-container {
-    display: flex;
-    flex-direction: column; /* Stack children vertically */
-    align-items: center; /* Center children horizontally */
-    padding: 10px;
-}
 
 .button-container {
     display: flex;
@@ -54,11 +34,18 @@ body {
 }
 
 .filter-button {
-    /* Your button styling */
-    padding: 10px 20px;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
     border: none;
-    border-radius: 20px;
+    border-radius: 32px;
+    background-color: orange;
+    color: white;
+    font-size: 16px;
     cursor: pointer;
+}
+.filter-button.active {
+    background-color: darkorange;
 }
 
 .filter-button.active {
@@ -71,39 +58,74 @@ body {
     color: #333;
 }
 
-.main-content {
-    flex: 1;
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.checkbox-container input[type="checkbox"] {
+    accent-color: orange; /* Adjust the color to match your design */
+}
+
+/* Popup Overlay */
+.popup-overlay {
+    position: fixed; /* Fixed position */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5); /* Semi-transparent background */
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+
+/* POPUP */
+.popup {
+    background-color: white;
     padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 70%;
+    max-width: 400px;
+    line-height: 1.6;
+    hyphens: auto;
 }
 
-.groups {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 20px;
-    padding: 20px;
+.message-box {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 10px;
 }
 
-.group-card {
-    flex: 0 1 calc(50% - 20px);
-    background-color: #fff;
-    border-radius: 32px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    overflow: hidden;
+.popup-button {
+    background-color: orange;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-right: 10px;
 }
 
-.group-image {
-    background-color: #ffd700;
-    height: 150px;
+.popup-button.contact-driver {
+    background-color: #ddd;
+    color: black;
 }
 
-.group-info {
-    padding: 20px;
+@media (max-width: 768px) {
+    .popup {
+        width: 90%; /* Allow the popup to be wider on small screens */
+        padding: 15px;
+    }
+    .message-box p {
+        font-size: 14px; /* Smaller font size for smaller screens */
+    }
 }
+
+/*NAVBAR*/
 
 .navbar {
     margin-top: auto;
@@ -160,3 +182,7 @@ body {
         flex: 0 1 100%;
     }
 }
+
+
+
+

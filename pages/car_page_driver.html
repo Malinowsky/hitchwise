@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car</title>
+    <link rel="stylesheet" href="../styles/car_page_driver.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h2>My car</h2>
+        <p>Going to: Home</p>
+    </header>
+    <div class="stop-container">
+        <p>From: ISPGaya (Gaia)</p>
+        <p> To: Polo Universitário (Porto)</p>
+        <p>2 spots left</p>
+        <p>Leaving at: 12:30h of 05/12/2023</p>
+        <p>Meeting point: ISPGaya level 2, in front of the bathrooms</p>
+    </div>
+    <div class="stops-container">
+        <h3>Stops Requested:</h3>
+        <div class="stop-item">
+            <span class="material-icons stop-icon">place</span>
+            <p>GaiaShopping</p>
+        </div>
+        <div class="stop-item">
+            <span class="material-icons stop-icon">place</span>
+            <p>Polo Universitário</p>
+        </div>
+    </div>
+
+    <div class="actions-container">
+        <button class="action-button edit" id="editSpotButton">Edit Car</button>
+        <button class="action-button cancel" id="cancelSpotButton">Cancel Trip</button>
+        <button class="action-button notify" id="notifySpotButton">Send notification to the hitchhikers</button>
+    </div>
+
+    <div id="popupOverlay" class="popup-overlay" style="display:none;">
+        <div class="popup">
+            <p>What would you like to say to the hitchhickers?</p>
+            <textarea id="hitchhikerMessage" placeholder="Message here"></textarea>
+            <button id="okButton" class="popup-button">Send</button>
+            <button id="cancelButton" class="popup-button cancel"> Cancel</button>
+        </div>
+    </div>
+
+    <div id="requestPopupOverlay" class="popup-overlay" style="display:none;">
+        <div class="request-popup">
+            <p>The user <strong>Usher</strong> is requesting a spot in your car</p>
+            <p>Gender: Male</p>
+            <p>Stop requested: GaiaShopping</p>
+            <div class="request-popup-buttons">
+                <button class="request-popup-button yes">Yes</button>
+                <button class="request-popup-button no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <a href="#" class="nav-item active">
+            <span class="icon">🏠</span>
+            <span class="label">Home</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">👥</span>
+            <span class="label">Groups</span>
+        </a>
+        <a href="#" class="nav-item">
+            <span class="icon">👤</span>
+            <span class="label">Profile</span>
+        </a>
+    </nav>
+</div>
+<script src="../js/car_page_driver.js"></script>
+</body>
+</html>
