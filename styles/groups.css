@@ -13,6 +13,7 @@ body {
     display: flex;
     flex-direction: column;
     background-color: white;
+    justify-content: center;
     padding: 20px;
     border-radius: 32px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -71,6 +72,22 @@ body {
     color: #333;
 }
 
+.addcar-button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.addcar-button.active {
+    background-color: white;
+    color: black;
+}
+
+.addcar-button:not(.active) {
+    background-color: orange;
+    color: white;
+}
+
 .main-content {
     flex: 1;
     display: flex;
@@ -88,6 +105,7 @@ body {
 }
 
 .group-card {
+    width: 200px;
     flex: 0 1 calc(50% - 20px);
     background-color: #fff;
     border-radius: 32px;

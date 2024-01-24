@@ -37,6 +37,7 @@
         <button class="action-button edit" id="editSpotButton">Edit Car</button>
         <button class="action-button cancel" id="cancelSpotButton">Cancel Trip</button>
         <button class="action-button notify" id="notifySpotButton">Send notification to the hitchhikers</button>
+        <button class="action-button notify" id="confirmSpotButton">Accept hitchhikers</button>
     </div>
 
     <div id="popupOverlay" class="popup-overlay" style="display:none;">
@@ -47,6 +48,30 @@
             <button id="cancelButton" class="popup-button cancel"> Cancel</button>
         </div>
     </div>
+
+    <div id="cancelPopupOverlay" class="popup-overlay" style="display:none;">
+        <div class="popup">
+            <p>Are you sure you want to cancel this trip?</p>
+            <p>The hitchhikers that were registered will be warned</p>
+            <div class="popup-buttons">
+                <button class="popup-button yes">Yes</button>
+                <button class="popup-button no">No</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="confirmationPopupOverlay" class="popup-overlay" style="display:none;">
+        <div class="popup">
+            <p>The user <strong>Usher</strong> is requesting a spot in your car</p>
+            <p>Gender: Male</p>
+            <p>Stop requested: GaiaShopping</p>
+            <div class="popup-buttons">
+                <button class="popup-button yes">Yes</button>
+                <button class="popup-button no">No</button>
+            </div>
+        </div>
+    </div>
+
 
     <div id="requestPopupOverlay" class="popup-overlay" style="display:none;">
         <div class="request-popup">

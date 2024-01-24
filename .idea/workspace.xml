@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f057f3c2-945f-4cb8-a246-9c637945c214" name="Changes" comment="first version - Artur Malinowski">
-      <change afterPath="$PROJECT_DIR$/js/car_page_driver.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/js/car_page_hitch.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/car_page_driver.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/car_page_hitch.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/car_page_driver.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/car_page_hitch.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_16_37_[Changes]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_03_01_2024_16_37__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/car_page_driver.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/car_page_driver.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/car_page_driver.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/car_page_driver.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/car_page_hitch.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/car_page_hitch.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/group_page.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/group_page.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/groups.html" beforeDir="false" afterPath="$PROJECT_DIR$/pages/groups.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/car_page_driver.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/car_page_driver.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/car_page_hitch.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/car_page_hitch.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/styles/groups.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/groups.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,10 @@
       <workItem from="1702129310643" duration="170000" />
       <workItem from="1702131846915" duration="1737000" />
       <workItem from="1702901101210" duration="17000" />
-      <workItem from="1704299452168" duration="12450000" />
+      <workItem from="1704299452168" duration="12847000" />
+      <workItem from="1705243923921" duration="142000" />
+      <workItem from="1705954354765" duration="82000" />
+      <workItem from="1706120759492" duration="4788000" />
     </task>
     <task id="LOCAL-00001" summary="first version - Artur Malinowski">
       <option name="closed" value="true" />
